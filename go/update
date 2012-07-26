@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<firmware>
+<status>AVAILABLE</status>
+<nextcheck>723</nextcheck>
+<url>http://download.kodak.com/digital/software/pictureFrame/autoupdate_test/2010_09_06/Kodak_FW__Fuller.img</url>
+<version>2010.09.06</version>
+<message language="en-US">New firmware version available.</message>
+</firmware>
+

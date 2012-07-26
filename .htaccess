@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteRule DeviceRest.* kodak-pulse-picture-frame-server
+
