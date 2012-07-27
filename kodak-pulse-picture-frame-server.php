@@ -85,7 +85,12 @@
 
 $r = $_SERVER['REQUEST_URI'];
 $pull_intervall = 30; #seconds
-$rss_url = 'http://pipes.yahoo.com/pipes/pipe.run?MaxResult=7&RSSFeed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fbase%2Fuser%2F107135950873398578411%2Falbumid%2F5376824435897050881%3Falt%3Drss%26kind%3Dphoto%26authkey%3DGv1sRgCODokcb3-9C9LA%26hl%3Dno%26max-result%3D999999%26imgmax%3D800&_id=d378e12925ff63939c05ce3eda60a8f0&_render=rss';
+
+
+#check out http://pipes.yahoo.com/pipes/pipe.info?_id=d378e12925ff63939c05ce3eda60a8f0 
+$rss_url = '<replace with your rss feed>';
+
+
 $latest_picture_timestamp = getLatestUpdate($rss_url);
 $latest_overall_timestamp = $latest_picture_timestamp;
 
