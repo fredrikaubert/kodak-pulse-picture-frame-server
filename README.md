@@ -90,6 +90,7 @@ at  /etc/apache2/sites-available/kodak-pulse
 	</VirtualHost>
 
 Do the simular thing for handling https, referencing the previosly generated certificate
+
 	SSLCertificateFile    /etc/apache2/ssl/server.crt
 	SSLCertificateKeyFile /etc/apache2/ssl/server.key
 
