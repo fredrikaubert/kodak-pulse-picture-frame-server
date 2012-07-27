@@ -31,17 +31,17 @@ might push you in the right direction.
 
 a. Generate a ssl certificate and install it in Apache webserver
 
-openssl genrsa -des3 -out server.key 2048
-openssl req -new -key server.key -out server.csr
-openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
-openssl rsa -in server.key -out server.key.insecure
+	openssl genrsa -des3 -out server.key 2048
+	openssl req -new -key server.key -out server.csr
+	openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+	openssl rsa -in server.key -out server.key.insecure
 
-mv server.key server.key.secure
-mv server.key.insecure server.key
+	mv server.key server.key.secure
+	mv server.key.insecure server.key
 
-mkdir /etc/apache2/ssl
-cp server.crt /etc/apache2/ssl
-cp server.key /etc/apache2/ssl
+	mkdir /etc/apache2/ssl
+	cp server.crt /etc/apache2/ssl
+	cp server.key /etc/apache2/ssl
 
 b. Create a site to handle the kodak trafic:
 at  /etc/apache2/sites-available/kodak-pulse 
